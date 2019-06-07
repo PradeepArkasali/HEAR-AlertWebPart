@@ -45,8 +45,8 @@ export default class Dailyalert extends React.Component<IDailyalertProps, IState
     );
   }
 
-  private RightButtonClick = () => {
-    if(this.clickCount < this.state.messages.length-1){
+  private RightButtonClick = () => {  
+    if(this.clickCount < this.state.messages.length - 1){
       this.clickCount++;
     }
     this.setState({alertMessage:this.state.messages[this.clickCount]});
