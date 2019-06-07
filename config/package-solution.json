@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "daily-alert-client-side-solution",
+    "id": "cfb6f7ef-b565-4cd9-8438-7b165afd0125",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/daily-alert.sppkg"
+  }
+}

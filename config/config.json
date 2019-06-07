@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "dailyalert-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dailyalert/DailyalertWebPart.js",
+          "manifest": "./src/webparts/dailyalert/DailyalertWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DailyalertWebPartStrings": "lib/webparts/dailyalert/loc/{locale}.js"
+  }
+}
