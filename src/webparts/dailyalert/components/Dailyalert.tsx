@@ -1,7 +1,6 @@
 import * as React from 'react';
 import styles from './Dailyalert.module.scss';
 import { IDailyalertProps } from './IDailyalertProps';
-import { escape } from '@microsoft/sp-lodash-subset';
 
 export interface IState {  
   alertMessage: string;
@@ -70,7 +69,7 @@ export default class Dailyalert extends React.Component<IDailyalertProps, IState
           
         if (spRequest.readyState === 4 && spRequest.status === 200){          
             var result = JSON.parse(spRequest.responseText); 
-            let messages = result.value.map(o=>o.Title);   
+            let messages = result.value.map(o => o.Title);   
             reactHandler.setState({    
                 messages: messages,
                 alertMessage: messages[0] 
