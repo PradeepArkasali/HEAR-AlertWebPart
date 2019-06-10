@@ -33,7 +33,6 @@ export default class Dailyalert extends React.Component<IDailyalertProps, IState
       <div className={ styles.dailyalert }>
         <div className={styles.alertBox}>
           <div className={styles.alertInfo}>
-            <div></div>
             <span className={styles.dailyAlertBadge}>Daily Alerts</span>
             <button className={styles.buttonArrow} onClick={this.LeftButtonClick}>&lt;</button>
             &nbsp;
